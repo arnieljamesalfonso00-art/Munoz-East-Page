@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +43,7 @@
                 <p>Here are the photos of our projects, initiatives, beautiful landscapes, and various community activities. <em>(Click on any photo to view it in full size)</em></p>
 
                 <div class="gallery-grid">
-                    <!-- Gallery Items -->
+                   
                     <div class="gallery-item" onclick="openModal('brgy_hall.jpg')">
                         <img src="HALL.jpg" alt="Barangay Hall">
                         <p>Muñoz East Barangay Hall</p>
@@ -72,7 +71,7 @@
                 </div>
 
                 <p style="margin-top: 1.5rem; font-style: italic; font-size: 0.9rem;">
-                    <!-- Optional footnote or caption text can be added here -->
+                    
                 </p>
             </div>
         </section>
@@ -89,7 +88,7 @@
     </footer>
 
     <script>
-        // Maintain theme settings across pages
+      
         if (localStorage.getItem('theme') === 'dark') {
             document.body.classList.add('dark-mode');
             document.getElementById('theme-toggle').textContent = '☀️';
@@ -110,7 +109,7 @@
             }
         };
 
-        // Search functionality
+       
         const searchInput = document.getElementById('search-input');
         const resultsBox = document.getElementById('search-results');
 
@@ -127,7 +126,7 @@
                 : `<em>❌ No matches found for "${query}"</em>`;
         });
 
-        // --- Feature: Image Lightbox Modal ---
+       
         function openModal(imgSrc) {
             document.getElementById('fullImage').src = imgSrc;
             document.getElementById('imageModal').style.display = "block";
@@ -139,7 +138,7 @@
             document.body.style.overflow = "auto";
         }
 
-        // Close lightbox when clicking the backdrop backdrop area
+       
         window.onclick = function(event) {
             const modal = document.getElementById('imageModal');
             if (event.target == modal) {
